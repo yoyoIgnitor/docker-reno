@@ -1,0 +1,20 @@
+basename: identity-service
+
+cloudProvider: aws
+region: us-east-1
+env: dev
+role: "service-gk-tech-com"
+serviceName: gkService
+owner: GK
+customerFacing: "false"
+serviceRepository: gkiranch/docker-reno
+engineeringOrg: "saas"
+productOrg: "gkServiceStructure"
+
+enablePublicDomain: true
+enablePrivateDomain: true
+
+image: "docker.io/ubuntu:22.04"
+
+openssl:
+  conf: "/etc/ssl/openssl.cnf.defaults"
