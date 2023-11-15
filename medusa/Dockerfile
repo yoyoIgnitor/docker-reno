@@ -42,7 +42,7 @@ ENV KC_FEATURES="token-exchange,fips"
 ENV KC_FIPS_MODE="strict"
 ENV KC_DB=postgres
 
-COPY --from=docker.io/kokuwaio/keycloak:21.1.2 /app/providers/metrics-spi.jar ${KC_PROVIDERS_PATH}/metrics-spi.jar
+COPY --from=docker.io/kokuwaio/keycloak:22.0.5 /app/providers/metrics-spi.jar ${KC_PROVIDERS_PATH}/metrics-spi.jar
 # General requirements
 RUN python3 -m pip install -U pip && pip3 install --ignore-installed --user \
     -r /build/requirements.txt \
