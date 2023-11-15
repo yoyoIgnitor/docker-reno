@@ -1,11 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabledManagers": ["helm-values", "dockerfile"],
+  "autoApprove": true,
   "packageRules": [
     {
       "matchFileNames": ["**/*"],
-      "automerge": true,
-      "autoApprove": true
+      "automerge": true
     }
   ]
 }
