@@ -3,6 +3,7 @@
   "enabledManagers": ["helm-values", "dockerfile"],
   "packageRules": [
     {
+      "matchFileNames": ["**/*"],
       "automerge": true,
       "autoApprove": true
     }
