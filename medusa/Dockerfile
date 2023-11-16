@@ -1,4 +1,4 @@
-FROM ubuntu:18.04 as base
+FROM ubuntu:22.04 as base
 
 WORKDIR /install
 
@@ -59,7 +59,7 @@ RUN pip3 install --ignore-installed --user -r /build/requirements-azure.txt \
 RUN pip3 install --ignore-installed --user /build
 
 # Could be python:slim, but we have a .sh entrypoint
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 
 ## add user
 RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 --create-home cassandra
