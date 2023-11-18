@@ -14,7 +14,7 @@ productOrg: "gkServiceStructure"
 enablePublicDomain: true
 enablePrivateDomain: true
 
-image: "docker.io/ubuntu:22.04"
+image: "docker.io/ubuntu:23.10"
 
 openssl:
   conf: "/etc/ssl/openssl.cnf.defaults"
