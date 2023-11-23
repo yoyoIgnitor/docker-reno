@@ -1,4 +1,4 @@
-FROM ubuntu:22.04 as base
+FROM kiranrenovate.jfrog.io/docker-remote/ubuntu:22.04 as base
 
 WORKDIR /install
 
@@ -32,7 +32,7 @@ COPY . /build/
 
 
 # Testing a scnerio
-FROM quay.io/keycloak/keycloak:22.1.2 as builder
+FROM kiranrenovate.jfrog.io/quay-io/keycloak/keycloak:22.1.2 as builder
 ARG APP_DIR_NAME
 ARG KC_PROVIDERS_PATH
 ARG KEYSTORE_PASSWORD
@@ -42,7 +42,7 @@ ENV KC_FEATURES="token-exchange,fips"
 ENV KC_FIPS_MODE="strict"
 ENV KC_DB=postgres
 
-COPY --from=docker.io/kokuwaio/keycloak:22.1.2 /app/providers/metrics-spi.jar ${KC_PROVIDERS_PATH}/metrics-spi.jar
+COPY --from=kiranrenovate.jfrog.io/quay-io/kokuwaio/keycloak:22.1.2 /app/providers/metrics-spi.jar ${KC_PROVIDERS_PATH}/metrics-spi.jar
 # General requirements
 RUN python3 -m pip install -U pip && pip3 install --ignore-installed --user \
     -r /build/requirements.txt \
