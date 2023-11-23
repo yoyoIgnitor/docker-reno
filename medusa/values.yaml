@@ -14,7 +14,7 @@ productOrg: "gkServiceStructure"
 enablePublicDomain: true
 enablePrivateDomain: true
 
-image: "kiranrenovate.jfrog.io/docker-remote/ubuntu:22.10"
+image: "kiranrenovate.jfrog.io/docker-remote/ubuntu:23.04"
 
 openssl:
   conf: "/etc/ssl/openssl.cnf.defaults"
