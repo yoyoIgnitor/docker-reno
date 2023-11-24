@@ -40,7 +40,6 @@ jobs:
         uses: ibiqlik/action-yamllint@v3
         with:
           file_or_dir: files.txt
-          config_file: .yamllint.yml
           config_data: |
             extends: default
             rules: 
