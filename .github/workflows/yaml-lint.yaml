@@ -35,8 +35,7 @@ jobs:
         id: find-files
         run: |
           find . -type f -name "*.yaml" -not -path "./.git/*" > files.txt
+      
       - name: Run yamllint
         run: |
-          while IFS= read -r file; do
-            yamllint "$file"
-          done < files.txt
+          find . -type f -name '*.yaml' -or -name '*.yml' | xargs yamllint -d "{extends: default, rules: {document-start: {present: false}}}"
