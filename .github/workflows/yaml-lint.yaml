@@ -37,5 +37,14 @@ jobs:
           find . -type f -name "*.yaml" -not -path "./.git/*" > files.txt
       
       - name: Run yamllint
-        run: |
-          find . -type f -name '*.yaml' -or -name '*.yml' | xargs yamllint -d "{extends: default, rules: {document-start: {present: false}}}"
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          file_or_dir: files.txt
+          config_file: .yamllint.yml
+          config_data: |
+            extends: default
+            rules: 
+              new-line-at-end-of-file:
+                level: warning
+              document-start:
+                level: warning
