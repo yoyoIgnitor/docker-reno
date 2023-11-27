@@ -18,4 +18,3 @@ image: "kiranrenovate.jfrog.io/docker/library/ubuntu:22.10"
 
 openssl:
   conf: "/etc/ssl/openssl.cnf.defaults"
-dlfjdlfjdslfjd
