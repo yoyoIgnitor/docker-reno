@@ -1,4 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "enabledManagers": ["helm-values", "dockerfile", "gradle", "gradle-wrapper"]
+  "enabledManagers": ["helm-values", "dockerfile", "gradle", "gradle-wrapper"],
+  "autoApprove": true,
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "major"],
+      "automerge": true
+    }
+  ]
 }
