@@ -5,7 +5,11 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest", "major"],
-      "automerge": true
+      "automerge": true,
+      "matchDatasources": ["maven"],
+      "registryUrls": [
+        "https://kiranrenovate.jfrog.io/artifactory/demo-maven-remote"
+    ]
     }
   ]
 }
