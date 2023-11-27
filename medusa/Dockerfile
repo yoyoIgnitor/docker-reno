@@ -1,4 +1,4 @@
-FROM kiranrenovate.jfrog.io/docker/library/ubuntu:22.04 as base
+FROM kiranrenovate.jfrog.io/docker/library/ubuntu:23.04 as base
 
 WORKDIR /install
 
