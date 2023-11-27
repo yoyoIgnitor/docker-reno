@@ -4,7 +4,6 @@
   "autoApprove": true,
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "major"],
       "automerge": true,
       "matchDatasources": ["maven"],
       "registryUrls": [
