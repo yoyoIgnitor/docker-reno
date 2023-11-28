@@ -58,7 +58,7 @@ dependencyManagement {
         mavenBom("org.jetbrains.kotlinx:kotlinx-coroutines-bom:$coroutinesVersion")
         mavenBom("io.awspring.cloud:spring-cloud-aws-dependencies:3.0.2")
         mavenBom("org.zalando:logbook-bom:3.5.0")
-        mavenBom("com.google.cloud:spring-cloud-gcp-dependencies:4.8.3")
+        mavenBom("com.google.cloud:spring-cloud-gcp-dependencies:4.8.4")
     }
 }
 
