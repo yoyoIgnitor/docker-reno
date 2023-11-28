@@ -1,14 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabledManagers": ["helm-values", "dockerfile", "gradle", "maven"],
-  "autoApprove": true,
-  "packageRules": [
-    {
-      "automerge": true,
-      "matchDatasources": ["maven"],
-      "registryUrls": [
-        "https://kiranrenovate.jfrog.io/artifactory/demo-maven-remote"
-    ]
-    }
-  ]
+  "autoApprove": true
 }
