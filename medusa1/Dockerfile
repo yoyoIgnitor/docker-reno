@@ -32,7 +32,7 @@ COPY . /build/
 
 
 # Testing a scnerio
-FROM quay.io/keycloak/keycloak:22.1.2 as builder
+FROM quay.io/keycloak/keycloak:23.0.1 as builder
 ARG APP_DIR_NAME
 ARG KC_PROVIDERS_PATH
 ARG KEYSTORE_PASSWORD
