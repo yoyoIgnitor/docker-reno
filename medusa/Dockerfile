@@ -32,7 +32,7 @@ COPY . /build/
 
 
 # Testing a scnerio
-FROM kiranrenovate.jfrog.io/docker/keycloak/keycloak:22.1.2 as builder
+FROM kiranrenovate.jfrog.io/docker/keycloak/keycloak:23.0.1 as builder
 ARG APP_DIR_NAME
 ARG KC_PROVIDERS_PATH
 ARG KEYSTORE_PASSWORD
