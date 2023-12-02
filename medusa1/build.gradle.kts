@@ -32,7 +32,7 @@ tasks.bootJar {
 
 var protobufJavaVersion = "3.21.6"
 var grpcVersion = "1.50.2"
-var grpcKotlinVersion = "1.3.0"
+var grpcKotlinVersion = "1.4.1"
 val coroutinesVersion = "1.7.3"
 
 detekt {
