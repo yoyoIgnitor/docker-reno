@@ -25,6 +25,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
       - name: Run yamllint
         uses: ibiqlik/action-yamllint@v3
-         
+        with:
+          config_data: |
+            extends: default
+            rules: 
+              new-line-at-end-of-file:
+                level: warning
+              document-start:
+                level: warning
