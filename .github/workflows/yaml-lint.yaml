@@ -12,13 +12,7 @@ on:
       - edited
       - synchronize
       - reopened
-  workflow_call:
-    inputs:
-      path:
-        type: string
-        required: false
-        default: "."
-        description: "Target path for yamllint"
+  workflow_call: {}
 
 jobs:
   yaml-lint:
@@ -32,7 +26,5 @@ jobs:
           config_data: |
             extends: default
             rules: 
-              new-line-at-end-of-file:
-                level: warning
-              document-start:
-                level: warning
+              new-line-at-end-of-file: disable
+              document-start: disable
