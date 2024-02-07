@@ -2,6 +2,13 @@
   {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "enabledManagers": ["helm-values", "dockerfile", "gradle","setup-cfg", "pipenv" ],
-    "autoApprove": true
-}
+    "autoApprove": true,
+    "customManagers": [
+      {
+        "dockerfile": {
+          "fileMatch": ["^Makefile$"]
+        }
+      }
+    ]
+  }
 
