@@ -11,6 +11,7 @@
         "matchStrings": [
           "PYTHON_BASE_IMAGE\\s:=\\s(?<currentValue>.*?)"
         ],
+        "depNameTemplate": "kiranrenovate.jfrog.io/docker-remote/python38",
         "datasourceTemplate": "docker"
   }
 ]
