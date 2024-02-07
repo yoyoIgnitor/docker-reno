@@ -1,7 +1,7 @@
 
   {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "enabledManagers": ["helm-values", "dockerfile", "gradle"],
+    "enabledManagers": ["helm-values", "dockerfile", "gradle", "Python"],
     "autoApprove": true,
     "customManagers": [
       {
