@@ -1,8 +1,17 @@
-{
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "enabledManagers": ["helm-values", "dockerfile", "gradle"],
-  "dockerfile": {
-    "fileMatch": ["(^|/|\\.)([Mm]ake)file$', '(^|/)([Mm]ake)file[^/]*$"]
+[
+  {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "enabledManagers": ["helm-values", "dockerfile", "gradle"],
+    "autoApprove": true
   },
-  "autoApprove": true
-}
+  {
+    "customManagers": [
+      {
+        "customType": "regex",
+        "fileMatch": [
+          "^Makefile$"
+        ]
+      }
+    ]
+  }
+]
