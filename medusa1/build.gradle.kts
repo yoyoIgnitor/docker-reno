@@ -10,7 +10,7 @@ import org.jooq.meta.jaxb.Logging
 import java.util.UUID
 
 plugins {
-    id("org.springframework.boot") version "3.1.5"
+    id("org.springframework.boot") version "3.2.2"
     id("io.spring.dependency-management") version "1.1.3"
     id("com.palantir.docker-run") version "0.34.0"
     id("com.google.protobuf") version "0.8.19"
