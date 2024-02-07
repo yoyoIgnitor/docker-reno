@@ -2,16 +2,6 @@
   {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "enabledManagers": ["helm-values", "dockerfile", "gradle", "python"],
-    "autoApprove": true,
-    "customManagers": [
-      {
-        "fileMatch": ["^Makefile$"],
-        "matchStringsStrategy": "any",
-        "matchStrings": [
-          "PYTHON_BASE_IMAGE = (?<currentValue>.*?)\n"
-        ],
-        "datasourceTemplate": "docker"
-}
-]
+    "autoApprove": true
 }
 
