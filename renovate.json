@@ -4,13 +4,13 @@
   "customManagers": [
       {
         "customType": "regex",
-        "datasourceTemplate": "docker",
         "fileMatch": [
-          "(^|/)Makefile\\$"
-        ],
+          "(^|/)Makefile\\$" ],
         "matchStrings": [
-          "#\\s*renovate: image=(?<depName>.*?)\\s+PYTHON_BASE_IMAGE:\\s*[\"']?(?<currentValue>[\\w+\\.\\-]*)"
-        ]
+            "#\\s*renovate: image=(?<depName>.*?)\\s+PYTHON_BASE_IMAGE:\\s*[\"']?(?<currentValue>[\\w+\\.\\-]*)"
+          ],
+          "datasourceTemplate": "docker"
+        
       }
     ]
   }
