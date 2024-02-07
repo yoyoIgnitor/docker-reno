@@ -5,15 +5,15 @@
     "autoApprove": true,
     "customManagers": [
       {
-        "customType": "regex",
         "fileMatch": ["^Makefile$"],
         "matchStringsStrategy": "any",
         "matchStrings": [
-          "PYTHON_BASE_IMAGE\\s:=\\s(?<currentValue>.*?)"
+          "PYTHON_BASE_IMAGE\\s*=\\s*([^\\s]*)"
         ],
-        "depNameTemplate": "kiranrenovate.jfrog.io/docker-remote/python38",
-        "datasourceTemplate": "docker"
+        "versioning": {
+          "python": "auto"
   }
+}
 ]
 }
 
