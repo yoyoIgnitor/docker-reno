@@ -2,11 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "autoApprove": true,
   "customManagers": [
-    {
-      "customType": "regex",
-      "fileMatch": [
-        "^Makefile$"
-      ]
-    }
-  ]
-}
+      {
+        "customType": "regex",
+        "datasourceTemplate": "docker",
+        "fileMatch": [
+          "(^|/)Makefile\\$"
+        ],
+        "matchStrings": [
+          "#\\s*renovate: image=(?<depName>.*?)\\s+PYTHON_BASE_IMAGE:\\s*[\"']?(?<currentValue>[\\w+\\.\\-]*)"
+        ]
+      }
+    ]
+  }
