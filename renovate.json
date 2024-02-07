@@ -3,11 +3,10 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "autoApprove": true,
     "customManagers": [
-      {
-        "dockerfile": {
+      { 
           "fileMatch": ["^Makefile$"]
         }
-      }
+      
     ]
   }
 
