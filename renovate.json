@@ -3,6 +3,6 @@
   "enabledManagers": ["helm-values", "dockerfile", "gradle"],
   "dockerfile": {
     "fileMatch": ['(^|/|\\.)([Mm]ake)file$', '(^|/)([Mm]ake)file[^/]*$']
-  }
+  },
   "autoApprove": true
 }
