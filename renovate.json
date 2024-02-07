@@ -8,11 +8,9 @@
         "fileMatch": ["^Makefile$"],
         "matchStringsStrategy": "any",
         "matchStrings": [
-          "PYTHON_BASE_IMAGE\\s*=\\s*([^\\s]*)"
+          "PYTHON_BASE_IMAGE = (?<currentValue>.*?)\n"
         ],
-        "versioning": {
-          "python": "auto"
-  }
+        "datasourceTemplate": "docker"
 }
 ]
 }
