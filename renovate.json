@@ -10,7 +10,7 @@
         "matchStrings": [
           "PYTHON_BASE_IMAGE = (?<currentValue>.*?)\n"
         ],
-        "datasourceTemplate": "python"
+        "datasourceTemplate": "docker"
 }
 ]
 }
