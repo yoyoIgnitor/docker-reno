@@ -1,12 +1,12 @@
-
-  {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "autoApprove": true,
-    "customManagers": [
-      { 
-          "fileMatch": ["^Makefile$"]
-        }
-      
-    ]
-  }
-
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "autoApprove": true,
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^Makefile$"
+      ]
+    }
+  ]
+}
