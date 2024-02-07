@@ -7,9 +7,11 @@
       {
         "customType": "regex",
         "fileMatch": ["^Makefile$"],
+        "matchStringsStrategy": "any",
         "matchStrings": [
-          "GOTESTSUM_VERSION\\s:=\\s(?<currentValue>.*?)"
-        ]
+          "PYTHON_BASE_IMAGE\\s:=\\s(?<currentValue>.*?)"
+        ],
+        "datasourceTemplate": "docker"
   }
 ]
 }
