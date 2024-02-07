@@ -2,14 +2,14 @@
   {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "enabledManagers": ["helm-values", "dockerfile", "gradle"],
+    "autoApprove": true,
     "customManagers": [
       {
         "customType": "regex",
         "fileMatch": ["^Makefile$"],
         "matchStrings": [
           "GOTESTSUM_VERSION\\s:=\\s(?<currentValue>.*?)"
-        ],
-    "autoApprove": true
+        ]
   }
 ]
 }
