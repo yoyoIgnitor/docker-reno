@@ -9,7 +9,7 @@
       "matchStrings": [
         "PYTHON_BASE_IMAGE = (?<currentValue>.*?)\n"
       ],
-      "datasourceTemplate": "artifactory",
+      "datasourceTemplate": "docker",
       "depNameTemplate": "kiranrenovate.jfrog.io/docker-remote"
 
 }
