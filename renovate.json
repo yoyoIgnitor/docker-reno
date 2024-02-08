@@ -9,7 +9,7 @@
       "matchStrings": [
         "PYTHON_BASE_IMAGE = (?<currentValue>.*?)\n"
       ],
-      "datasourceTemplate": "pypi"
+      "datasourceTemplate": "artifactory"
 }
 ]
 }
