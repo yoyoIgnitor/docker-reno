@@ -7,7 +7,7 @@
       "fileMatch": ["^Makefile$"],
       "matchStringsStrategy": "any",
       "matchStrings": [
-        "PYTHON_BASE_IMAGE=(?<currentValue>.*?)\n"
+        "PYTHON_BASE_IMAGE = (?<currentValue>.*?)\n"
       ],
       "datasourceTemplate": "artifactory",
       "depNameTemplate": "kiranrenovate.jfrog.io/docker-remote"
