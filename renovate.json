@@ -2,16 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabledManagers": ["helm-values", "dockerfile", "gradle"],
   "autoApprove": true,
-  "customManagers": [
+  "packageRules": [
     {
-      "fileMatch": ["^Makefile$"],
-      "matchStringsStrategy": "any",
-      "matchStrings": [
-        "PYTHON_BASE_IMAGE = (?<currentValue>.*?)\n"
-      ],
-      "datasourceTemplate": "artifactory",
-      "depNameTemplate": "docker"
-
-}
-]
+      "matchDatasources": ["artifactory"],
+      "matchPackageNames": ["Makefile"],
+      "automerge": true
+    }
+  ]
 }
