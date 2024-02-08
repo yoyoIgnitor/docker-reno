@@ -10,7 +10,7 @@
         "PYTHON_BASE_IMAGE = (?<currentValue>.*?)\n"
       ],
       "datasourceTemplate": "artifactory",
-      "depNameTemplate": "kiranrenovate.jfrog.io/docker-remote"
+      "depNameTemplate": "docker"
 
 }
 ]
